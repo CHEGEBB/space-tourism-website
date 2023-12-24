@@ -1,0 +1,2296 @@
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Kalnia:wght@300&family=Noto+Serif+JP:wght@300&display=swap');
+
+  /* font-family: 'Fira Sans', sans-serif;
+font-family: 'Kalnia', serif;
+font-family: 'Noto Serif JP', serif; */
+  body {
+    margin: 0;
+    max-height: 100vh;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  p {
+    font-family: 'Fira Sans', sans-serif;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: 'Kalnia', serif;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+
+  .container1 {
+    background-color: black;
+    color: #ffff;
+    background-image: url("./assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    font-weight: bold;
+    margin-top: 50px;
+    font-family: 'Fira Sans', sans-serif;
+    border-radius: 12px;
+    margin-right: 50px;
+  }
+
+  .nav div {
+    cursor: pointer;
+    color: white;
+    /* White text color */
+    margin: 0 15px;
+    /* Add space between navigation items */
+    position: relative;
+    /* Relative positioning for the underline */
+  }
+
+  .nav div::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    /* Underline height */
+    background-color: #ff5e9e;
+    /* Soft magenta underline color */
+    bottom: -2px;
+    /* Move the underline slightly below the text */
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.3s ease;
+    /* Smooth transition for the underline */
+  }
+
+  .nav div:hover::after,
+  .nav div.active::after {
+    opacity: 1;
+    /* Show the underline on hover and for the active item */
+  }
+
+  .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .section-divider {
+    width: 500px;
+    border-top: 1px solid #ccc;
+    margin-top: -10px;
+    margin-left: 80px;
+  }
+
+  .logo img {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  .space {
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    justify-content: space-around;
+  }
+
+  .travel {
+    width: 600px;
+    margin-top: 20px;
+
+  }
+
+  .travel h2 {
+
+    margin-top: 50px;
+    font-size: 70px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    font-family: 'Noto Serif JP', serif;
+
+  }
+
+  .travel p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2rem;
+    width: 380px;
+  }
+
+  .explore {
+    color: black;
+    background-color: #ffff;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+  }
+
+  .container2 {
+    background-image: url("./assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #ffff;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .moonpic img {
+    margin-top: 30px;
+    margin-left: 200px;
+    width: 400px;
+    height: 400px;
+  }
+
+  .moondes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 100px;
+    align-items: center;
+    width: 500px;
+    line-height: 2rem;
+
+  }
+
+  .moondes ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0 100px;
+    font-size: 20px;
+  }
+
+  .moondes li {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+  .moondes li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #ffff;
+    /* Change this color as needed */
+    transition: width 0.3s ease;
+  }
+
+  .moondes li:hover::after,
+  .moondes li.active::after {
+    width: 100%;
+  }
+
+  .moonpic h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-left: 200px;
+    margin-top: 50px;
+  }
+
+  .moondes h2 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-right: 100px;
+  }
+
+  .moondes p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2rem;
+    width: 500px;
+    margin-left: 150px;
+  }
+
+  .duration1 {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    gap: 100px;
+  }
+
+  .distance1 {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+  }
+
+  .time1 {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+  }
+
+  .container3 {
+    background-image: url("./assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #ffff;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .marspic img {
+    margin-top: 30px;
+    margin-left: 200px;
+    width: 400px;
+    height: 400px;
+  }
+
+  .marsdes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-left: 100px;
+    align-items: center;
+    width: 500px;
+    line-height: 2rem;
+
+  }
+
+  .marsdes ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0 100px;
+    font-size: 20px;
+  }
+
+  .marsdes li {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+  .marsdes li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #ffff;
+    /* Change this color as needed */
+    transition: width 0.3s ease;
+  }
+
+  .marsdes li:hover::after,
+  .marsdes li.active::after {
+    width: 100%;
+  }
+
+  .marspic h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-left: 200px;
+    margin-top: 50px;
+  }
+
+  .marsdes h2 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-right: 100px;
+  }
+
+  .marsdes p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2rem;
+    width: 500px;
+    margin-left: 150px;
+  }
+
+  .duration2 {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    gap: 100px;
+  }
+
+  .distance2 {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+  }
+
+  .time2 {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+  }
+
+  .container4 {
+    background-image: url("./assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #ffff;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .europic img {
+    margin-top: 30px;
+    margin-left: 200px;
+    width: 400px;
+    height: 400px;
+  }
+
+  .europades {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-left: 100px;
+    align-items: center;
+    width: 500px;
+    line-height: 2rem;
+
+  }
+
+  .europades ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0 100px;
+    font-size: 20px;
+  }
+
+  .europades li {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+  .europades li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #ffff;
+    /* Change this color as needed */
+    transition: width 0.3s ease;
+  }
+
+  .europades li:hover::after,
+  .europades li.active::after {
+    width: 100%;
+  }
+
+  .europic h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-left: 200px;
+    margin-top: 50px;
+  }
+
+  .europades h2 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-right: 100px;
+  }
+
+  .europades p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2rem;
+    width: 500px;
+    margin-left: 150px;
+  }
+
+  .duration3 {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    gap: 100px;
+  }
+
+  .distance3 {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+  }
+
+  .time3 {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+  }
+
+  .container5 {
+    background-image: url("./assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #ffff;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .titanpic img {
+    margin-top: 30px;
+    margin-left: 200px;
+    width: 400px;
+    height: 400px;
+  }
+
+  .titandes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-left: 100px;
+    align-items: center;
+    width: 500px;
+    line-height: 2rem;
+
+  }
+
+  .titandes ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0 100px;
+    font-size: 20px;
+  }
+
+  .titandes li {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+  .titandes li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #ffff;
+    /* Change this color as needed */
+    transition: width 0.3s ease;
+  }
+
+  .titandes li:hover::after,
+  .titandes li.active::after {
+    width: 100%;
+  }
+
+  .titanpic h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-left: 200px;
+    margin-top: 50px;
+  }
+
+  .titandes h2 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-right: 100px;
+  }
+
+  .titandes p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2rem;
+    width: 500px;
+    margin-left: 150px;
+  }
+
+  .duration4 {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    gap: 100px;
+  }
+
+  .distance4 {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+  }
+
+  .time4 {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+  }
+
+  .container6 {
+    background-image: url("./assets/crew/background-crew-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #ffff;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .commander img {
+    height: 550px;
+    width: 450px;
+    margin-left: 300px;
+    margin-top: 40PX;
+
+  }
+
+  .crew1 {
+    margin-top: 20px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+  }
+
+  .crew1 p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2rem;
+    width: 400px;
+    margin-left: 150px;
+  }
+
+  .crew1 h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-right: 40px;
+  }
+
+  .crew1 h3 {
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    margin-left: 350px;
+    width: 600px;
+  }
+
+  .dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .dot.active {
+    background-color: darkblue;
+  }
+
+  .container7 {
+    background-image: url("./assets/crew/background-crew-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #ffff;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .engineer img {
+    height: 500px;
+    width: 500px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+  }
+
+  .crew2 {
+    margin-top: 20px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+  }
+
+  .crew2 p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2rem;
+    width: 380px;
+    margin-left: 150px;
+  }
+
+  .crew2 h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 50px;
+  }
+
+  .crew2 h3 {
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    margin-left: 350px;
+    width: 600px;
+  }
+
+  .dots-container2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .dot2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .dot2.active {
+    background-color: darkblue;
+  }
+
+  .container8 {
+    background-image: url("./assets/crew/background-crew-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #ffff;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .pilot img {
+    height: 500px;
+    width: 500px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+  }
+
+  .crew3 {
+    margin-top: 20px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+  }
+
+  .crew3 p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2rem;
+    width: 380px;
+    margin-left: 150px;
+  }
+
+  .crew3 h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-right: 140px;
+  }
+
+  .crew3 h3 {
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    margin-left: 350px;
+    width: 600px;
+  }
+
+  .dots-container3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .dot3 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .dot3.active {
+    background-color: darkblue;
+  }
+
+  .container9 {
+    background-image: url("./assets/crew/background-crew-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #ffff;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mission img {
+    height: 500px;
+    width: 400px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+  }
+
+  .crew4 {
+    margin-top: 20px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+  }
+
+  .crew4 p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2rem;
+    width: 380px;
+    margin-left: 150px;
+  }
+
+  .crew4 h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 90px;
+  }
+
+  .crew4 h3 {
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    margin-left: 450px;
+    width: 700px;
+  }
+
+  .dots-container4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .dot4 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .dot4.active {
+    background-color: darkblue;
+  }
+
+  .container10 {
+    background-image: url("./assets/technology/background-technology-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #ffff;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .spacecap img {
+    height: 300px;
+    width: 500px;
+    margin-right: 40px;
+    border-radius: 12px;
+  }
+
+  .tech1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 100px;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  .count {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid white;
+  }
+
+  .circle.active {
+    background-color: white;
+    color: black;
+  }
+
+  .technology1 h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-left: 200px;
+    margin-top: 50px;
+  }
+
+  .capsule h2 {
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .capsule h3 {
+    font-weight: 700;
+    font-size: 50px;
+    width: 500px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+
+  .capsule p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2rem;
+    width: 380px;
+  }
+
+  .container11 {
+    background-image: url("./assets/technology/background-technology-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #ffff;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .spaceport img {
+    height: 300px;
+    width: 500px;
+    margin-left: 50px;
+    border-radius: 12px;
+  }
+
+  .tech2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 100px;
+    justify-content: space-between;
+    gap: 90px;
+  }
+
+  .count2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .circle2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid white;
+  }
+
+  .circle2.active {
+    background-color: white;
+    color: black;
+  }
+
+  .technology2 h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-left: 200px;
+    margin-top: 50px;
+  }
+
+  .spaceport h2 {
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .spaceport h3 {
+    font-weight: 700;
+    font-size: 50px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+
+  .spaceport p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2rem;
+    width: 380px;
+  }
+
+  .container12 {
+    background-image: url("./assets/technology/background-technology-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #ffff;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .spacecraft img {
+    height: 300px;
+    width: 500px;
+    margin-left: 50px;
+    border-radius: 12px;
+  }
+
+  .tech3 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 100px;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .count3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .circle3 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid white;
+  }
+
+  .circle3.active {
+    background-color: white;
+    color: black;
+  }
+
+  .technology3 h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-left: 200px;
+    margin-top: 50px;
+  }
+
+  .spacecraft h2 {
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .spacecraft h3 {
+    font-weight: 700;
+    font-size: 50px;
+    width: 500px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+
+  .spacecraft p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2rem;
+    width: 380px;
+  }
+
+  .container13 {
+    background-image: url("./assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .contact {
+    text-align: center;
+    background-color: #fff;
+    padding: 50px 0;
+  }
+
+  .contact h1 {
+    color: #6e3667;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+
+  .contact Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactForm label {
+    margin: 10px 0;
+  }
+
+  .contactForm input,
+  .contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    box-sizing: border-box;
+  }
+
+  .contactForm button {
+    background-color: #6e3667;
+    /* Dark Purple Color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  /* mobile design  */
+  @media screen and (max-width: 768px) {
+    .body {
+      margin: 0;
+      max-height: 100vh;
+      padding: 0;
+      overflow-x: hidden;
+      overflow: hidden;
+    }
+    .container1 {
+      background-image: url("./assets/home/background-home-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      color: #ffff;
+      display: flex;
+      flex-direction: column;
+      height: 700px;
+    }
+    .logo img{
+      width: 30px;
+      height: 30px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      background-color: rgba(255, 255, 255, 0.1);
+      font-weight: bold;
+      margin-top: 10px;
+      font-family: 'Fira Sans', sans-serif;
+      border-radius: 12px;
+      gap: 5px;
+    }
+
+    .nav div {
+      cursor: pointer;
+      color: white;
+      margin: 0 15px;
+      position: relative;
+    }
+
+    .nav div::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #ff5e9e;
+      bottom: -2px;
+      /* Move the underline slightly below the text */
+      opacity: 0;
+      /* Initially hidden */
+      transition: opacity 0.3s ease;
+    }
+
+    .nav div:hover::after,
+    .nav div.active::after {
+      opacity: 1;
+      /* Show the underline on hover and for the active item */
+    }
+
+    .top {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .section-divider {
+      width: 300px;
+      border-top: 1px solid #ccc;
+      margin-top: -10px;
+      margin-left: -50px;
+    }
+
+    .logo img {
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+
+    .space {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      justify-content: space-around;
+    }
+
+    .travel {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 50px;
+
+
+    }
+    .travel h1{
+      font-size: 22px;
+      font-family: 'Noto Serif JP', serif;
+      width: 320px;
+    }
+    .travel h2 {
+
+      font-size: 30px;
+      font-family: 'Noto Serif JP', serif;
+      
+
+    }
+
+    .travel p {
+      font-size: 16px;
+      line-height: 1rem;
+      width: 280px;
+    }
+
+    .explore {
+      color: black;
+      background-color: #ffff;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: white;
+      justify-content: center;
+      align-items: center;
+      margin-left: 120px;
+      
+    }
+
+    .container2 {
+      background-image: url("./assets/destination/background-destination-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      color: #ffff;
+      display: flex;
+      flex-direction: column;
+      height: 800px;
+
+    }
+
+    .moonpic img {
+      margin-top: 30px;
+      margin-left: 60px;
+      width: 250px;
+      height: 250px;
+    }
+
+    .moondes {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      width: 320px;
+      line-height: 1.5rem;
+
+    }
+
+    .moondes ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      font-size: 20px;
+      flex-direction: row;
+      margin-left: -50px;
+    }
+
+    .moondes li {
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    .moondes li::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background-color: #ffff;
+      /* Change this color as needed */
+      transition: width 0.3s ease;
+    }
+
+    .moondes li:hover::after,
+    .moondes li.active::after {
+      width: 100%;
+    }
+
+    .moonpic h1 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-left: 40px;
+      margin-top: 50px;
+    }
+
+    .moondes h2 {
+      font-size: 30px;
+      font-weight: 700;
+      margin-right: 150px;
+    }
+
+    .moondes p {
+      font-size: 16px;
+      margin-top: 20px;
+      line-height: 1.5rem;
+      width: 300px;
+      margin-right: 270px;
+    }
+
+    .duration1 {
+      display: flex;
+      flex-direction: row;
+      margin-right: 90px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      justify-content: space-between;
+      gap: 80px;
+    }
+
+    .distance1 {
+      display: flex;
+      flex-direction: column;
+      width: 100px;
+    }
+
+    .time1 {
+      display: flex;
+      flex-direction: column;
+      width: 100px;
+    }
+
+    .container3 {
+      background-image: url("./assets/destination/background-destination-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      color: #ffff;
+      display: flex;
+      flex-direction: column;
+      height: 800px;
+
+    }
+
+    .marspic img {
+      margin-top: 30px;
+      margin-left: 40px;
+      width: 250px;
+      height: 250px;
+    
+    }
+
+    .marsdes {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0px;
+      align-items: center;
+      width: 500px;
+      line-height: 1.5rem;
+    
+
+    }
+
+    .marsdes ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      margin: 0 100px;
+      font-size: 20px;
+      flex-direction: row;
+      margin-left: -250px;
+    }
+
+    .marsdes li {
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    .marsdes li::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background-color: #ffff;
+      /* Change this color as needed */
+      transition: width 0.3s ease;
+    }
+
+    .marsdes li:hover::after,
+    .marsdes li.active::after {
+      width: 100%;
+    }
+
+    .marspic h1 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-left: 50px;
+      margin-top: 50px;
+    }
+
+    .marsdes h2 {
+      font-size: 30px;
+      font-weight: 700;
+      margin-left: -230px;
+    }
+
+    .marsdes p {
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      line-height: 2rem;
+      width: 320px;
+      margin-left: -300px;
+    }
+
+    .duration2 {
+      display: flex;
+      flex-direction: row;
+      margin-left: -250px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      justify-content: space-between;
+      gap: 100px;
+    }
+
+    .distance2 {
+      display: flex;
+      flex-direction: column;
+      width: 100px;
+    }
+
+    .time2 {
+      display: flex;
+      flex-direction: column;
+      width: 100px;
+    }
+
+    .container4 {
+      background-image: url("./assets/destination/background-destination-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      color: #ffff;
+      display: flex;
+      flex-direction: column;
+      height: 800px;
+
+    }
+
+    .europic img {
+      margin-top: 30px;
+      margin-left: 50px;
+      width: 250px;
+      height: 250px;
+    }
+
+    .europades {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0px;
+      margin-left: 100px;
+      align-items: center;
+      width: 320px;
+      line-height: 1.5rem;
+
+    }
+
+    .europades ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      margin: 0 100px;
+      font-size: 20px;
+      flex-direction: row;
+      margin-left: -70px;
+    }
+
+    .europades li {
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    .europades li::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background-color: #ffff;
+      /* Change this color as needed */
+      transition: width 0.3s ease;
+    }
+
+    .europades li:hover::after,
+    .europades li.active::after {
+      width: 100%;
+    }
+
+    .europic h1 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 50px;
+      width: 320px;
+      margin-left: 50px;
+    }
+
+    .europades h2 {
+      font-size: 30px;
+      font-weight: 700;
+      margin-left: -20px;
+    }
+
+    .europades p {
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      line-height: 2rem;
+      width: 320px;
+      margin-left: -90px;
+    }
+
+    .duration3 {
+      display: flex;
+      flex-direction: row;
+      margin-left: -100px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      justify-content: space-between;
+      gap: 100px;
+    }
+
+    .distance3 {
+      display: flex;
+      flex-direction: column;
+      width: 100px;
+    }
+
+    .time3 {
+      display: flex;
+      flex-direction: column;
+      width: 100px;
+    }
+
+    .container5 {
+      background-image: url("./assets/destination/background-destination-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      color: #ffff;
+      display: flex;
+      flex-direction: column;
+      height: 800px;
+    }
+
+    .titanpic img {
+      margin-top: 30px;
+      margin-left: 50px;
+      width: 250px;
+      height: 250px;
+    }
+
+    .titandes {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0px;
+      margin-left: 100px;
+      align-items: center;
+      width: 500px;
+      line-height: 2rem;
+
+
+    }
+
+    .titandes ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      margin: 0 100px;
+      font-size: 20px;
+      flex-direction: row;
+      margin-left: -200px;
+    }
+
+    .titandes li {
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    .titandes li::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background-color: #ffff;
+      /* Change this color as needed */
+      transition: width 0.3s ease;
+    }
+
+    .titandes li:hover::after,
+    .titandes li.active::after {
+      width: 100%;
+    }
+
+    .titanpic h1 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 50px;
+      width: 320px;
+      margin-left: 50px;
+    }
+
+    .titandes h2 {
+      font-size: 30px;
+      font-weight: 700;
+      margin-left: -200px;
+    }
+
+    .titandes p {
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      line-height: 2rem;
+      width: 320px;
+      margin-left: -270px;
+    }
+
+    .duration4 {
+      display: flex;
+      flex-direction: row;
+      margin-left: -250px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      justify-content: space-between;
+      gap: 100px;
+    }
+
+    .distance4 {
+      display: flex;
+      flex-direction: column;
+      width: 100px;
+    }
+
+    .time4 {
+      display: flex;
+      flex-direction: column;
+      width: 100px;
+    }
+
+    .container6 {
+      background-image: url("./assets/crew/background-crew-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      color: #ffff;
+      display: flex;
+      flex-direction: column;
+      height: 800px;
+
+    }
+
+    .commander img {
+      height: 300px;
+      width: 300px;
+      margin-left: 50px;
+      margin-top: 40PX;
+      order: 1;
+
+    }
+
+    .crew1 {
+      margin-top: 20px;
+      margin-left: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 500px;
+      order: 2;
+    }
+
+    .crew1 p {
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      line-height: 2rem;
+      width: 320px;
+      margin-left: -250px;
+    }
+    .crew1 h1{
+      font-size: 20px;
+      font-weight: 700;
+      margin-left:-300px;
+      margin-top: 50px;
+    }
+
+    .crew1 h2 {
+      font-size: 20px;
+      font-weight: 400;
+      margin-left: -300px;
+    }
+
+    .crew1 h3 {
+      font-size: 25px;
+      font-weight: 400;
+      margin-top: -10px;
+      margin-bottom: 10px;
+      width: 320px;
+      margin-left: -200px;
+    }
+
+    .dots-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-left: -400px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #ccc;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+
+    .dot.active {
+      background-color: darkblue;
+    }
+
+    .container7 {
+      background-image: url("./assets/crew/background-crew-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      color: #ffff;
+      display: flex;
+      flex-direction: column;
+      height: 900px;
+
+    }
+
+    .engineer img {
+      height: 300px;
+      width: 300px;
+      margin-left: 50px;
+      display: flex;
+      flex-direction: row;
+      margin-top: 100px;
+      order: 1;
+    }
+
+    .crew2 {
+      margin-top: 20px;
+      margin-left: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 500px;
+      order: 2;
+
+    }
+
+    .crew2 p {
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      line-height: 2rem;
+      width: 320px;
+      margin-left: -270px;
+    }
+    .crew2 h1{
+      font-size: 20px;
+      font-weight: 700;
+      margin-left:-300px;
+      margin-top: 50px;
+    }
+
+    .crew2 h2 {
+      font-size: 20px;
+      font-weight: 400;
+      margin-left: -300px;
+    }
+
+    .crew2 h3 {
+      font-size: 30px;
+      font-weight: 400;
+      margin-top: -10px;
+      margin-bottom: 10px;
+      width: 320px;
+      margin-left: -300px;
+    }
+
+    .dots-container2 {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .dot2 {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #ccc;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+
+    .dot2.active {
+      background-color: darkblue;
+    }
+
+    .container8 {
+      background-image: url("./assets/crew/background-crew-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      color: #ffff;
+      display: flex;
+      flex-direction: column;
+      height: 900px;
+
+    }
+
+    .pilot img {
+      height: 300px;
+      width: 300px;
+      margin-left: 50px;
+      display: flex;
+      flex-direction: row;
+      margin-top: 100px;
+      order: 1;
+    }
+
+    .crew3 {
+      margin-top: 20px;
+      margin-left: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 500px;
+      order: 2;
+    }
+
+    .crew3 p {
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      line-height: 2rem;
+      width: 320px;
+      margin-left: -270px;
+    }
+    .crew3 h1{
+      font-size: 20px;
+      font-weight: 700;
+      margin-left:-300px;
+      margin-top: 50px;
+    }
+    .crew3 h2 {
+      font-size: 20px;
+      font-weight: 400;
+      margin-left: -180px;
+    }
+
+    .crew3 h3 {
+      font-size: 30px;
+      font-weight: 400;
+      margin-top: -10px;
+      margin-bottom: 10px;
+      width: 320px;
+      margin-left: -250px;
+    }
+
+    .dots-container3 {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .dot3 {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #ccc;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+
+    .dot3.active {
+      background-color: darkblue;
+    }
+
+    .container9 {
+      background-image: url("./assets/crew/background-crew-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      color: #ffff;
+      display: flex;
+      flex-direction: column;
+      height: 900px;
+
+    }
+
+    .mission img {
+      height: 300px;
+      width: 300px;
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      order: 1;
+    }
+
+    .crew4 {
+      margin-top: 20px;
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 500px;
+      order: 2;
+    }
+
+    .crew4 p {
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      line-height: 2rem;
+      width: 320px;
+      margin-left: -150px;
+    }
+    .crew4 h1{
+      font-size: 20px;
+      font-weight: 700;
+      margin-left:-150px;
+      margin-top: 50px;
+    }
+    .crew4 h2 {
+      font-size: 20px;
+      font-weight: 400;
+      margin-left: -150px;
+    }
+
+    .crew4 h3 {
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: -10px;
+      margin-bottom: 10px;
+      width: 320px;
+      margin-left: -100px;
+
+    .dots-container4 {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .dot4 {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #ccc;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+
+    .dot4.active {
+      background-color: darkblue;
+    }
+
+    .container10 {
+      background-image: url("./assets/technology/background-technology-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #ffff;
+      display: flex;
+      flex-direction: column;
+      height: 1000px;
+
+    }
+
+    .spacecap img {
+      height: 100px;
+      width: 100px;
+      margin-left: -600px;
+      border-radius: 12px;
+      order: 1;
+    }
+
+    .tech1 {
+      display: flex;
+      flex-direction: row;
+      margin-top: 50px;
+      justify-content: space-between;
+      gap: 20px;
+      order: 2;
+      background-color: red;
+      width: 320px;
+    }
+
+    .count {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .circle {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.2);
+      display: flex;
+      /* align-items: center;
+      justify-content: center; */
+      margin: 5px;
+      cursor: pointer;
+      border: 1px solid white;
+      flex-direction: row;
+    }
+
+    .circle.active {
+      background-color: white;
+      color: black;
+    }
+
+    .technology1 h1 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 50px;
+      margin-left: -300px;
+      display: flex;
+      flex-direction: column;
+      background-color: red;
+    }
+
+    .capsule h2 {
+      font-weight: 400;
+      font-size: 20px;
+      margin-left: -200px;
+    }
+
+    .capsule h3 {
+      font-weight: 700;
+      font-size: 30px;
+      width: 320px;
+      margin-left: -200px;
+    }
+
+    .capsule p {
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      line-height: 2rem;
+      width: 380px;
+      margin-left: -200px;
+    }
+
+    .container11 {
+      background-image: url("./assets/technology/background-technology-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      color: #ffff;
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .spaceport img {
+      height: 300px;
+      width: 500px;
+      margin-left: 50px;
+      border-radius: 12px;
+    }
+
+    .tech2 {
+      display: flex;
+      flex-direction: row;
+      margin-top: 50px;
+      margin-left: 100px;
+      justify-content: space-between;
+      gap: 90px;
+    }
+
+    .count2 {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .circle2 {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5px;
+      cursor: pointer;
+      border: 1px solid white;
+    }
+
+    .circle2.active {
+      background-color: white;
+      color: black;
+    }
+
+    .technology2 h1 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-left: 200px;
+      margin-top: 50px;
+    }
+
+    .spaceport h2 {
+      font-weight: 400;
+      font-size: 20px;
+    }
+
+    .spaceport h3 {
+      font-weight: 700;
+      font-size: 50px;
+      margin-top: -10px;
+      margin-bottom: 20px;
+    }
+
+    .spaceport p {
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      line-height: 2rem;
+      width: 380px;
+    }
+
+    .container12 {
+      background-image: url("./assets/technology/background-technology-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      color: #ffff;
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .spacecraft img {
+      height: 300px;
+      width: 500px;
+      margin-left: 50px;
+      border-radius: 12px;
+    }
+
+    .tech3 {
+      display: flex;
+      flex-direction: row;
+      margin-top: 50px;
+      margin-left: 100px;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .count3 {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .circle3 {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5px;
+      cursor: pointer;
+      border: 1px solid white;
+    }
+
+    .circle3.active {
+      background-color: white;
+      color: black;
+    }
+
+    .technology3 h1 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-left: 200px;
+      margin-top: 50px;
+    }
+
+    .spacecraft h2 {
+      font-weight: 400;
+      font-size: 20px;
+    }
+
+    .spacecraft h3 {
+      font-weight: 700;
+      font-size: 50px;
+      width: 500px;
+      margin-top: -10px;
+      margin-bottom: 20px;
+    }
+
+    .spacecraft p {
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      line-height: 2rem;
+      width: 380px;
+    }
+
+    .container13 {
+      background-image: url("./assets/destination/background-destination-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      color: #ffff;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .contactform {
+      text-align: center;
+      background-color: #fff;
+      padding: 50px 0;
+    }
+    
+    .contactform h1 {
+      color: #6e3667;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+    
+    .contactform form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .contactform form label {
+      margin: 10px 0;
+    }
+    
+    .contactform form input,
+    .contactform form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 20px;
+      box-sizing: border-box;
+    }
+    
+    .contactform form button {
+      background-color: #6e3667;
+      /* Dark Purple Color */
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    
+  }
+}
